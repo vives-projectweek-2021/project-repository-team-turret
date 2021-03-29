@@ -1,6 +1,6 @@
 # Team Turret
 
-![Team Turret img](./img/TeamTurret3.png)
+![Team Turret img](./img/TeamTurret.png)
 
 ## Team Members
 
