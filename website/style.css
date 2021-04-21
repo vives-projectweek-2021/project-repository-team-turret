@@ -1,0 +1,25 @@
+:root{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+section .stream{
+    width: 600px;
+	margin: auto;
+}
+
+section .controls button{
+    width: 100px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+section .mode p{
+    margin-bottom: 5px;
+}
