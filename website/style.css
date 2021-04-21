@@ -10,6 +10,7 @@ body{
 section .stream{
     width: 600px;
 	margin: auto;
+    margin-bottom: 10px ;
 }
 
 section .controls button{
@@ -17,7 +18,30 @@ section .controls button{
     height: 50px;
     font-size: x-large;
     font-weight: bold;
+    border-style: solid;
+    border-radius: 3px;
+}
 
+section .controls .left, .right{
+    color: white;
+    background-color: #008779;
+    border-color: #008779;
+}
+
+section .controls .left:active, .right:active{
+    color: #008779;
+    background-color: white;
+    border-color: #008779;
+}
+
+section .controls .fire{
+    background-color: rgb(255, 91, 91);
+    border-color: rgb(255, 91, 91);
+}
+
+section .controls .fire:active{
+    color: rgb(255, 91, 91);
+    background-color: white;
 }
 
 section .mode p{
