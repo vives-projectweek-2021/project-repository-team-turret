@@ -47,3 +47,17 @@ section .controls .fire:active{
 section .mode p{
     margin-bottom: 5px;
 }
+
+footer .logo img{
+    width: 90px;
+	position: fixed; 
+	bottom: 0; 
+	right: 90px; 
+}
+
+footer .vives-logo img{
+    width: 80px;
+	position: fixed; 
+	bottom: 0; 
+	right: 5px; 
+}
