@@ -8,9 +8,11 @@ body{
 }
 
 section .stream{
+    background-color: darkslategray;
     width: 600px;
+    height: 482px;
 	margin: auto;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
 
 section .controls button{
