@@ -35,6 +35,7 @@ section .controls .left:active, .right:active{
 }
 
 section .controls .fire{
+    color: white;
     background-color: rgb(255, 91, 91);
     border-color: rgb(255, 91, 91);
 }
