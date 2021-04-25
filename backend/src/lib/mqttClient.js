@@ -6,8 +6,8 @@ const topicListener = baseTopic + "/#"
 mqttClient.subscribe(topicListener,{qos:1})
 
 const options={
-    retain:true,
-    qos:1,
+    retain: false,
+    qos: 1,
 }
 
 mqttClient.on("connect",() => {	
