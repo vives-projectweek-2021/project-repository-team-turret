@@ -29,6 +29,12 @@ const fireBtn = document.getElementById("fire")
 const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
 
+const manualMode = document.getElementById("manual")
+const halfAutoMode = document.getElementById("half-auto")
+const autoMode = document.getElementById("auto")
+const defenseMode = document.getElementById("defense")
+
+
 
 fireBtn.addEventListener("click", () => {
     formatWsMsg("movement", "fire")
@@ -40,4 +46,21 @@ leftBtn.addEventListener("click", () => {
 
 rightBtn.addEventListener("click", () => {
     formatWsMsg("movement", "right")
+})
+
+
+manualMode.addEventListener("click", () => {
+    formatWsMsg("mode", "manual")
+})
+
+halfAutoMode.addEventListener("click", () => {
+    formatWsMsg("mode", "half-auto")
+})
+
+autoMode.addEventListener("click", () => {
+    formatWsMsg("mode", "auto")
+})
+
+defenseMode.addEventListener("click", () => {
+    formatWsMsg("mode", "defense")
 })
