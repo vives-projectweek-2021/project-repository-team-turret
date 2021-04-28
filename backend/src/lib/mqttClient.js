@@ -12,7 +12,7 @@ const options={
 
 mqttClient.on("connect",() => {	
     console.log("connected "+ mqttClient.connected)
-    mqttClient.subscribe(`${baseTopic}/test`, function (err) {
+    mqttClient.subscribe(`${baseTopic}/test`, (err) => {
         if (!err) {
             publish('test', 'Browser connected', options)
         }
@@ -31,7 +31,7 @@ mqttClient.on("error", (error) => {
 
 
 function publish(topic,command){
-    if (mqttClient.connected == true) {
+    if (mqttClient.connected) {
         mqttClient.publish(`${baseTopic}/${topic}`, command, options)
     }
 }
