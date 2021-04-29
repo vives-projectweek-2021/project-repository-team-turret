@@ -7,7 +7,9 @@
     <title>Projectweek</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c2d28f360e.js" crossorigin="anonymous"></script>
-    <script src="./index.js" defer></script>
+    <script src="./src/websocket.js" defer></script>
+    <script src="./src/index.js" defer></script>
+    <script src="./src/keyboardControls.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,6 +23,9 @@
         <button id="left"><i class="fas fa-caret-left"></i></button>
         <button id="fire"><i class="fas fa-crosshairs"></i></button>
         <button id="right"><i class="fas fa-caret-right"></i></button>
+    </div>
+    <div>
+        <p id="turret-angle">0°</p>
     </div>
     <div class="mode">
         <p>Select mode:</p>
