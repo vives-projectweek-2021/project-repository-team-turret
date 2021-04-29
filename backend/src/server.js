@@ -1,7 +1,7 @@
 const express = require('express')
 const http = require('http')
 const WebSocket = require('ws')
-const mqttClient = require("./lib/mqttClient.js")
+const messageProcessor = require("./lib/messageProcessor.js")
 
 const app = express()
 const server = http.createServer(app)
@@ -17,11 +17,7 @@ wss.on('connection', (wssClient) => {
     console.log('WebSocket connection...')
     
     wssClient.on('message', (message) => {
-        const msg = JSON.parse(message)
-        console.log(msg)
-        if(msg.hasOwnProperty('topic') && msg.hasOwnProperty('command')){
-            mqttClient.publish(msg.topic, msg.command)
-        }
+        messageProcessor.process(message)
     })
     
     wssClient.send(JSON.stringify( { message: 'welcome', value: "Welcome using WebSocket"}))
