@@ -67,3 +67,11 @@ footer .vives-logo img{
 	bottom: 0; 
 	right: 5px; 
 }
+div.img {
+  background-image: url('http://172.16.101.169:8080/video');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  }
