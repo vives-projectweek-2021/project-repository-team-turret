@@ -7,6 +7,23 @@ body{
     text-align: center;
 }
 
+header h1{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: #008779;
+    color: ghostwhite;
+}
+
+section .wrapper{
+    display: grid;
+    grid-template-columns: 200px 60vh 200px;
+    justify-content:center;
+    align-content: center;
+    
+}
+
 section .streamContainer{
     /* background-color: darkslategray; */
     width: 60vh;
@@ -22,6 +39,16 @@ section .streamContainer{
   background-size: contain;
   width: 100%;
   height: 400px;
+}
+
+section .wrapper .sliders{
+    width: 200px;
+    margin-left: auto;
+}
+
+section .wrapper .whitespace{
+    width: 200px;
+    margin-right: auto;
 }
 
 section .controls button{

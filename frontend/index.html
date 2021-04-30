@@ -17,10 +17,20 @@
     </header>
     <p id="coords"></p>
     <section>
+        <div class="wrapper">
+            <div class="whitespace"></div>
+
         <div class="streamContainer">
             <!-- <img src="./src/img/cameraview.png" alt="placeholder" width="600px"> -->
             <div id="stream" onclick="showCoords(event)" name="viewport"></div>
         </div>
+
+        <div class="sliders">
+            <p>Power: </p>
+            <input type="range" min="1" max="100" value="0" id="power" class="power">
+        </div>
+    </div>
+
         <div class="controls">
             <button id="left"><i class="fas fa-caret-left"></i></button>
             <button id="fire"><i class="fas fa-crosshairs"></i></button>
