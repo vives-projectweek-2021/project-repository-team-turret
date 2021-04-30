@@ -39,3 +39,10 @@ autoMode.addEventListener("click", () => {
 defenseMode.addEventListener("click", () => {
     formatWsMsg("mode", "defense")
 })
+
+function showCoords(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+    const coords = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = coords;
+}
