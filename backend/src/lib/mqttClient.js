@@ -1,5 +1,5 @@
 const mqtt = require('mqtt')
-const mqttClient  = mqtt.connect(`mqtt://localhost`, {clientId:"commander"})
+const mqttClient  = mqtt.connect(`mqtt://172.16.101.191`, {clientId:"commander"})
 
 const baseTopic="tommys_blaster"
 const topicListener = baseTopic + "/#"
