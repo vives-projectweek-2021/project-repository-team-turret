@@ -7,6 +7,8 @@ const halfAutoMode = document.getElementById("half-auto")
 const autoMode = document.getElementById("auto")
 const defenseMode = document.getElementById("defense")
 
+const coordsP = document.getElementById("coords")
+const stream = document.getElementById("stream")
 
 fireBtn.addEventListener("click", () => {
     formatWsMsg("movement", "fire")
@@ -41,8 +43,14 @@ defenseMode.addEventListener("click", () => {
 })
 
 function showCoords(event) {
-    const x = event.clientX;
-    const y = event.clientY;
+    let x = event.clientX - 150;
+    let y = event.clientY;
+    
+    const xMax = stream.offsetWidth
+
+    const yMax = 482
+    // x = x / xMax * 180 - 90
+    
     const coords = "X coords: " + x + ", Y coords: " + y;
-    document.getElementById("demo").innerHTML = coords;
+    coordsP.innerHTML = coords;
 }
