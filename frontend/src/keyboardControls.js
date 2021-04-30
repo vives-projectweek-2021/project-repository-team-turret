@@ -16,6 +16,9 @@ window.onload = function(){
         {
             changeAngle(-10)
         };
+        if(gfg.keyCode === ENTER){
+            formatWsMsg("movement", "fire")
+        }
     };
 }
 
