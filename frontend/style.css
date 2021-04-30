@@ -62,25 +62,25 @@ section .controls button{
     border-radius: 3px;
 }
 
-section .controls .left, .right{
+#left, #right{
     color: white;
     background-color: #008779;
     border-color: #008779;
 }
 
-section .controls .left:active, .right:active{
+#left:active, #right:active{
     color: #008779;
     background-color: white;
     border-color: #008779;
 }
 
-section .controls .fire{
+#fire{
     color: white;
     background-color: rgb(255, 91, 91);
     border-color: rgb(255, 91, 91);
 }
 
-section .controls .fire:active{
+#fire:active{
     color: rgb(255, 91, 91);
     background-color: white;
 }
