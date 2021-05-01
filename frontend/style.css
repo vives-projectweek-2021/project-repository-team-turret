@@ -41,9 +41,37 @@ section .streamContainer{
   height: 400px;
 }
 
-section .wrapper .sliders{
+section .wrapper .sliderContainer{
     width: 200px;
     margin-left: auto;
+}
+
+.slider {
+    width: 300px;
+    height: 15px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 150px;
+    outline: none;
+    background: #d3d3d3;
+    transform: rotate(-90deg);
+    -webkit-appearance: none;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #008779;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #008779;
+    cursor: pointer;
 }
 
 section .wrapper .whitespace{
