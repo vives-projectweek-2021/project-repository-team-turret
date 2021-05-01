@@ -34,6 +34,7 @@ section .streamContainer{
 
 #stream {
   background-image: url('http://172.16.101.191:8000/stream.mjpg');
+  cursor: crosshair;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
