@@ -48,15 +48,12 @@ defenseMode.addEventListener("click", () => {
     formatWsMsg("mode", "defense")
 })
 
-function showCoords(event) {
-    let x = event.clientX - 150;
-    let y = event.clientY;
-    
-    const xMax = stream.offsetWidth
+stream.addEventListener("mousedown", (e) => {
+    let rectangle = stream.getBoundingClientRect() 
+    let x = e.clientX - rectangle.left;
+    let y = Math.round(e.clientY - rectangle.top);
+    let xRel = Math.round(x / rectangle.width * 180 -90)
 
-    const yMax = 482
-    // x = x / xMax * 180 - 90
-    
-    const coords = "X coords: " + x + ", Y coords: " + y;
+    let coords = `X: ${xRel}, Y: ${y}`;
     coordsP.innerHTML = coords;
-}
+})
