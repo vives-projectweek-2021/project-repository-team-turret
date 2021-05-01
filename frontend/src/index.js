@@ -2,6 +2,8 @@ const fireBtn = document.getElementById("fire")
 const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
 
+const powerSlider = document.getElementById("power")
+
 const manualMode = document.getElementById("manual")
 const halfAutoMode = document.getElementById("half-auto")
 const autoMode = document.getElementById("auto")
@@ -11,7 +13,7 @@ const coordsP = document.getElementById("coords")
 const stream = document.getElementById("stream")
 
 fireBtn.addEventListener("click", () => {
-    formatWsMsg("movement", "fire")
+    formatWsMsg("movement/fire", "1")
 })
 
 leftBtn.addEventListener("click", () => {
@@ -25,6 +27,10 @@ rightBtn.addEventListener("click", () => {
         changeAngle(10)
     }
 })
+
+powerSlider.oninput = () => {
+    changePower(powerSlider.value)
+}
 
 manualMode.addEventListener("click", () => {
     formatWsMsg("mode", "manual")
