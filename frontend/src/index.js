@@ -56,4 +56,6 @@ stream.addEventListener("mousedown", (e) => {
 
     let coords = `X: ${xRel}, Y: ${y}`;
     coordsP.innerHTML = coords;
+
+    formatWsMsg("movement/vertical", String(xRel))
 })
