@@ -1,9 +1,11 @@
 const turretAngle = document.getElementById("turret-angle")
 
-var angle = 0
+let angle = 0
 const ENTER = 13
 const ARROW_RIGHT = 39
 const ARROW_LEFT = 37
+const ARROW_UP = 38
+const ARROW_DOWN = 40
 
 window.onload = function(){
     
@@ -17,7 +19,15 @@ window.onload = function(){
             changeAngle(-10)
         };
         if(gfg.keyCode === ENTER){
-            formatWsMsg("movement", "fire")
+            formatWsMsg("movement/fire", "1")
+        };
+        if(gfg.keyCode === ARROW_UP){
+            powerSlider.value = Number(powerSlider.value) + 200
+            changePower(powerSlider.value)
+        }
+        if(gfg.keyCode === ARROW_DOWN){
+            powerSlider.value = Number(powerSlider.value) - 200
+            changePower(powerSlider.value)
         }
     };
 }
@@ -33,3 +43,7 @@ function changeAngle(delta) {
     formatWsMsg("movement/vertical", String(angle))
 }
 
+function changePower(power) {
+    formatWsMsg("movement/left-motor", power)
+    formatWsMsg("movement/right-motor", power)
+}

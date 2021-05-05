@@ -17,13 +17,23 @@
     </header>
     <p id="coords"></p>
     <section>
-        <div class="streamContainer" >
+        <div class="wrapper">
+            <div class="whitespace"></div>
+
+        <div class="streamContainer">
             <!-- <img src="./src/img/cameraview.png" alt="placeholder" width="600px"> -->
-            <div id="stream"></div>
+            <div id="stream" name="viewport"></div>
         </div>
+
+        <div class="sliderContainer">
+            <p>Power: </p>
+            <input type="range" min="0" max="2000" value="0" step="200" id="power" class="slider">
+        </div>
+    </div>
+
         <div class="controls">
             <button id="left"><i class="fas fa-caret-left"></i></button>
-            <button id="fire"><i class="fas fa-crosshairs"></i></button>
+            <button id="fire" autofocus><i class="fas fa-crosshairs"></i></button>
             <button id="right"><i class="fas fa-caret-right"></i></button>
         </div>
         <div>

@@ -1,5 +1,7 @@
 const mqtt = require('mqtt')
-const mqttClient  = mqtt.connect(`mqtt://172.16.101.191`, {clientId:"commandertwo"})
+require('dotenv').config()
+const client = "commander" + Math.round((Math.random() * 1000))
+const mqttClient  = mqtt.connect(`mqtt:${process.env.BROKER_IP}`, {clientId:client})
 
 const baseTopic="tommys_blaster"
 const topicListener = baseTopic + "/#"
