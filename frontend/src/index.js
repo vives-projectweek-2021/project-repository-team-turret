@@ -43,13 +43,8 @@ defenseMode.addEventListener("click", () => {
 })
 
 function showCoords(event) {
-    let x = event.clientX - 150;
+    let x = event.clientX;
     let y = event.clientY;
-    
-    const xMax = stream.offsetWidth
-
-    const yMax = 482
-    // x = x / xMax * 180 - 90
     
     const coords = "X coords: " + x + ", Y coords: " + y;
     coordsP.innerHTML = coords;
