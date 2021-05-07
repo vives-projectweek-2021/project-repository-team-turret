@@ -57,5 +57,7 @@ stream.addEventListener("mousedown", (e) => {
     let coords = `X: ${xRel}, Y: ${y}`;
     coordsP.innerHTML = coords;
 
+    angle = xRel
+    turretAngle.innerHTML = angle + '°';
     formatWsMsg("movement/vertical", String(xRel))
 })
