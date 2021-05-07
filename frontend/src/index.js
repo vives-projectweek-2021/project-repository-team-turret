@@ -17,14 +17,14 @@ fireBtn.addEventListener("click", () => {
 })
 
 leftBtn.addEventListener("click", () => {
-    if(isValidAngle(-10)){
-        changeAngle(-10)
+    if(isValidAngle(-1)){
+        changeAngle(-1)
     }
 })
 
 rightBtn.addEventListener("click", () => {
-    if(isValidAngle(10)){
-        changeAngle(10)
+    if(isValidAngle(1)){
+        changeAngle(1)
     }
 })
 
@@ -52,7 +52,7 @@ stream.addEventListener("mousedown", (e) => {
     let rectangle = stream.getBoundingClientRect() 
     let x = e.clientX - rectangle.left;
     let y = Math.round(e.clientY - rectangle.top);
-    let xRel = Math.round(x / rectangle.width * 180 -90)
+    let xRel = Math.round(x / rectangle.width * 40 - 20)
 
     let coords = `X: ${xRel}, Y: ${y}`;
     coordsP.innerHTML = coords;
