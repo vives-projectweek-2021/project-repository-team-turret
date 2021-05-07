@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://localhost:3000")
+const ws = new WebSocket("ws://172.16.102.12:3000")
 
 ws.onopen = () => {
     console.log("Connected via websocket")
