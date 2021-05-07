@@ -9,14 +9,13 @@ const ARROW_DOWN = 40
 
 window.onload = function(){
     
-
     window.onkeydown= function(gfg){
-        if(gfg.keyCode === ARROW_RIGHT && isValidAngle(10)){
-            changeAngle(10)
+        if(gfg.keyCode === ARROW_RIGHT && isValidAngle(1)){
+            changeAngle(1)
         };
-        if(gfg.keyCode === ARROW_LEFT && isValidAngle(-10))
+        if(gfg.keyCode === ARROW_LEFT && isValidAngle(-1))
         {
-            changeAngle(-10)
+            changeAngle(-1)
         };
         if(gfg.keyCode === ENTER){
             formatWsMsg("movement/fire", "1")
@@ -30,11 +29,12 @@ window.onload = function(){
             changePower(powerSlider.value)
         }
     };
+
 }
 
 function isValidAngle(delta) {
     angle = Number(turretAngle.innerHTML.slice(0, -1))
-    return !(Math.abs(angle + delta) > 90)
+    return !(Math.abs(angle + delta) > 20)
 }
 
 function changeAngle(delta) {
