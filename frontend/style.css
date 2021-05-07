@@ -61,6 +61,11 @@ section .wrapper .sliderContainer{
     background: #d3d3d3;
     transform: rotate(-90deg);
     -webkit-appearance: none;
+    opacity: 1;
+}
+
+.slider:hover{
+    opacity: 0.8;
 }
   
 .slider::-webkit-slider-thumb {
@@ -93,6 +98,10 @@ section .controls button{
     font-weight: bold;
     border-style: solid;
     border-radius: 3px;
+}
+
+section .controls button:hover{
+    opacity: 0.8;
 }
 
 #left, #right{
