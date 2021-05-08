@@ -10,6 +10,10 @@ const stream = document.getElementById("stream")
 const manualButton = document.getElementById("manual")
 const automaticButton = document.getElementById("automatic")
 
+/**
+ * Change basic turret settings
+ */
+
 fireBtn.addEventListener("click", () => {
     formatWsMsg("movement/fire", "1")
 })
@@ -30,6 +34,10 @@ powerSlider.oninput = () => {
     changePower(powerSlider.value)
 }
 
+/**
+ * Get coordinates of click on stream
+ */
+
 stream.addEventListener("mousedown", (e) => {
     let rectangle = stream.getBoundingClientRect() 
     let x = e.clientX - rectangle.left;
@@ -44,16 +52,25 @@ stream.addEventListener("mousedown", (e) => {
     formatWsMsg("movement/vertical", String(xRel))
 })
 
+/**
+ * Set styling of modus button
+ */
 
 const activeModeStyle = "background: #008779; border-color: #008779; color: white;"
 const inactiveModeStyle = "background: white; border-color: #e0e0e0; color: black;"
 
-automaticButton.addEventListener("click", () => {
-    automaticButton.style.cssText = activeModeStyle
-    manualButton.style.cssText = inactiveModeStyle
+function setActive(active){
+    automaticButton.style.cssText = (active === "manual") ? inactiveModeStyle : activeModeStyle
+    manualButton.style.cssText = (active === "manual") ? activeModeStyle : inactiveModeStyle
+    active = (active === "manual") ? "auto" : "manual"
+}
+
+let test = automaticButton.addEventListener("click", () => {
+    setActive("auto")
 })
 
 manualButton.addEventListener("click", () => {
-    manualButton.style.cssText = activeModeStyle
-    automaticButton.style.cssText = inactiveModeStyle
+    setActive("manual")
 })
+
+setActive("manual")
