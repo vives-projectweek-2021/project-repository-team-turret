@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Projectweek</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/c2d28f360e.js" crossorigin="anonymous"></script>
     <script src="./src/websocket.js" defer></script>
     <script src="./src/index.js" defer></script>
@@ -26,7 +26,7 @@
     <header>
         <h1><i class="fas fa-table-tennis"></i> Tommy's Blaster</h1>
     </header>
-    <p id="coords">X: ,Y:</p>
+    <p id="coords">X: 0, Y:0</p>
     <section>
         <div class="wrapper">
             <div class="whitespace"></div>
@@ -49,21 +49,6 @@
         </div>
         <div>
             <p id="turret-angle">0°</p>
-        </div>
-        <div class="mode">
-            <p>Select mode:</p>
-            <input type="radio" name="mode" id="manual" value="manual" checked>
-            <label for="selectMode1">Manual</label>
-            
-            <input type="radio" name="mode" id="auto" value="auto">
-            <label for="selectMode2">Automatic</label>
-
-            <input type="radio" name="mode" id="half-auto" value="halfauto">
-            <label for="selectMode3">Half-automatic</label>
-
-            <input type="radio" name="mode" id="defense" value="defense">
-            <label for="selectMode4">Defense</label>
-
         </div>
     </section>
     <footer>

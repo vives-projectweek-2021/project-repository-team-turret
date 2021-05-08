@@ -32,22 +32,6 @@ powerSlider.oninput = () => {
     changePower(powerSlider.value)
 }
 
-manualMode.addEventListener("click", () => {
-    formatWsMsg("mode", "manual")
-})
-
-halfAutoMode.addEventListener("click", () => {
-    formatWsMsg("mode", "half-auto")
-})
-
-autoMode.addEventListener("click", () => {
-    formatWsMsg("mode", "auto")
-})
-
-defenseMode.addEventListener("click", () => {
-    formatWsMsg("mode", "defense")
-})
-
 stream.addEventListener("mousedown", (e) => {
     let rectangle = stream.getBoundingClientRect() 
     let x = e.clientX - rectangle.left;
