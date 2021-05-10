@@ -51,6 +51,16 @@ section .wrapper .sliderContainer{
     margin-left: auto;
 }
 
+.sliderContainer input[type="text"]{
+    width: 30px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 3px;
+    margin-left: 2px;
+    text-align: right;
+}
+
 .slider {
     width: 300px;
     height: 15px;
@@ -59,6 +69,7 @@ section .wrapper .sliderContainer{
     margin-top: 150px;
     outline: none;
     background: #d3d3d3;
+    border-radius: 3px;
     transform: rotate(-90deg);
     -webkit-appearance: none;
 }

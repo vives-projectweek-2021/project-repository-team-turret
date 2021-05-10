@@ -37,8 +37,9 @@
         </div>
 
         <div class="sliderContainer">
-            <p>Power: </p>
-            <input type="range" min="0" max="2000" value="0" step="200" id="power" class="slider">
+            <p>Power: <input type="text" id="powerValue" value="" maxlength="4" readonly></p>
+            <input type="range" min="0" max="2000" value="0" step="200" id="power" class="slider" onchange="updatePowerValue(this.value);">
+            
         </div>
     </div>
 

@@ -74,3 +74,7 @@ manualButton.addEventListener("click", () => {
 })
 
 setActive("manual")
+
+function updatePowerValue(val) {
+    document.getElementById('powerValue').value=val; 
+  }
