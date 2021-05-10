@@ -2,13 +2,6 @@
 
 ![Team Turret img](./img/TeamTurretWhite.png)
 
-## Team Members
-
-- [Wout Peirens](https://github.com/wout297)
-- [Thomas Luca](https://github.com/ThomasLuca)
-- [Tristan De Lil](https://github.com/TristanDeLil)
-- [Jay D'Hulster](https://github.com/JayDHulster)
-
 ## Installation process
 
 First clone this project with the following command:
@@ -92,3 +85,18 @@ In this option, the robot will shoot in the middle speed in the middelst interva
 ### Hard mode
 
 In this option, the robot will shoot in the hardest speed in the fasted interval of shooting.
+
+## Team Members
+
+- [Wout Peirens](https://github.com/wout297)
+- [Thomas Luca](https://github.com/ThomasLuca)
+- [Tristan De Lil](https://github.com/TristanDeLil)
+- [Jay D'Hulster](https://github.com/JayDHulster)
+
+## Mentors
+
+- [Nico De Witte](https://github.com/BioBoost)
+- [Piet Cordemans](https://github.com/pietcordemans)
+- [Sille Van Landschoot](https://github.com/sillevl)
+- [Franky Loret](https://github.com/frankyloret)
+- [Jonas Lannoo](https://github.com/JonasLannoo1)
