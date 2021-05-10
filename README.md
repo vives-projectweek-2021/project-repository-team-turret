@@ -96,7 +96,7 @@ In this option, the robot will shoot in the hardest speed in the fasted interval
 ## Mentors
 
 - [Nico De Witte](https://github.com/BioBoost)
-- [Piet Cordemans](https://github.com/pietcordemans)
+- [Piet Cordemans](https://github.com/pcordemans)
 - [Sille Van Landschoot](https://github.com/sillevl)
 - [Franky Loret](https://github.com/frankyloret)
-- [Jonas Lannoo](https://github.com/JonasLannoo1)
+- [Jonas Lannoo](https://github.com/JonasLannoo)
