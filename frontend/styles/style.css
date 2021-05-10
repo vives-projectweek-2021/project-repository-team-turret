@@ -33,7 +33,7 @@ section .streamContainer{
 }
 
 #stream {
-  background-image: url('http://172.16.102.76:8000/stream.mjpg');
+  background-image: url('http://172.16.102.76:8000/stream.mjpg'); /* => THIS IP ADDRESS NEED TO BE CHANGED WITH THE IP ADDRESS OF THE RASPBERRY PI */
   cursor: crosshair;
   background-position: center center;
   background-repeat: no-repeat;

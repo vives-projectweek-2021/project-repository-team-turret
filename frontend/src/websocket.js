@@ -1,4 +1,4 @@
-const IpAddress = "172.16.102.16" // => NEEDS TO BE CHANGED WHEN USING OTHER IP-ADDRESS
+const IpAddress = "172.16.102.16" // => THIS IP ADDRESS NEED TO BE CHANGED WITH THE IP ADDRESS OF THE RASPBERRY PI
 const ws = new WebSocket("ws://" + IpAddress + ":3000")
 // console.log(ws)
 
