@@ -10,6 +10,10 @@ const stream = document.getElementById("stream")
 const manualButton = document.getElementById("manual")
 const automaticButton = document.getElementById("automatic")
 
+const easyButton = document.getElementById("easy-mode")
+const mediumButton = document.getElementById("medium-mode")
+const hardButton = document.getElementById("hard-mode")
+
 /**
  * Change basic turret settings
  */
@@ -59,6 +63,8 @@ stream.addEventListener("mousedown", (e) => {
 const activeModeStyle = "background: #008779; border-color: #008779; color: white;"
 const inactiveModeStyle = "background: white; border-color: #e0e0e0; color: black;"
 
+let gameMode = "manual"
+
 function setActive(active){
     automaticButton.style.cssText = (active === "manual") ? inactiveModeStyle : activeModeStyle
     manualButton.style.cssText = (active === "manual") ? activeModeStyle : inactiveModeStyle
@@ -66,11 +72,29 @@ function setActive(active){
 }
 
 let test = automaticButton.addEventListener("click", () => {
-    setActive("auto")
+    gameMode = "auto"
+    setActive(gameMode)
 })
 
 manualButton.addEventListener("click", () => {
-    setActive("manual")
+    gameMode = "manual"
+    setActive(gameMode)
 })
 
-setActive("manual")
+setActive(gameMode)
+
+/**
+ * Set automatic modes
+ */
+
+easyButton.addEventListener("click", () => {
+    changeMode(easyMode)
+})
+
+mediumButton.addEventListener("click", () => {
+    changeMode(mediumMode)
+})
+
+hardButton.addEventListener("click", () => {
+    changeMode(hardMode)
+})

@@ -21,11 +21,11 @@ window.onload = function(){
             formatWsMsg("movement/fire", "1")
         };
         if(gfg.keyCode === ARROW_UP){
-            powerSlider.value = Number(powerSlider.value) + 200
+            powerSlider.value = Number(powerSlider.value) + 100
             changePower(powerSlider.value)
         }
         if(gfg.keyCode === ARROW_DOWN){
-            powerSlider.value = Number(powerSlider.value) - 200
+            powerSlider.value = Number(powerSlider.value) - 100
             changePower(powerSlider.value)
         }
     };
