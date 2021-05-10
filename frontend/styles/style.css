@@ -16,6 +16,17 @@ header h1{
     color: ghostwhite;
 }
 
+#coords{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 3px;
+}
+
 section .wrapper{
     display: grid;
     grid-template-columns: 200px 60vh 200px;
@@ -139,6 +150,17 @@ section .controls button:hover{
     background-color: white;
 }
 
+#turret-angle{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 3px;
+}
+
 section .mode p{
     margin-top: 0px;
     margin-bottom: 5px;
@@ -176,4 +198,8 @@ footer .vives-logo img{
 	position: fixed; 
 	bottom: 0; 
 	right: 5px; 
+}
+
+.mode-selector {
+    margin-top: 15px;
 }

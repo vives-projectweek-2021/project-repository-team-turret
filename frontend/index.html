@@ -10,6 +10,7 @@
     <script src="./src/websocket.js" defer></script>
     <script src="./src/index.js" defer></script>
     <script src="./src/keyboardControls.js" defer></script>
+    <script src="./src/difficulties.js" defer></script>
     
     <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
@@ -26,8 +27,8 @@
     <header>
         <h1><i class="fas fa-table-tennis"></i> Tommy's Blaster</h1>
     </header>
-    <p id="coords">X: 0, Y:0</p>
     <section>
+        <p id="coords">X: 0, Y: 0</p>
         <div class="wrapper">
             <div class="whitespace"></div>
 
@@ -38,7 +39,7 @@
 
         <div class="sliderContainer">
             <p>Power: <input type="text" id="powerValue" value="" maxlength="4" readonly></p>
-            <input type="range" min="0" max="2000" value="0" step="200" id="power" class="slider" onchange="updatePowerValue(this.value);">
+            <input type="range" min="0" max="2000" value="0" step="200" id="power" class="slider" onchange="updatePowerValue(this.value);" placeholder="0">
             
         </div>
     </div>
@@ -56,6 +57,11 @@
             <div class="modi-container">
                 <button id="manual" autofocus>Manual</button>
                 <button id="automatic">Automatic</button>
+            </div>
+            <div class="mode-selector">
+                <button id="easy-mode">Easy Mode</button>
+                <button id="medium-mode">Medium Mode</button>
+                <button id="hard-mode">Hard Mode</button>
             </div>
         </div>
     </section>
