@@ -18,12 +18,92 @@ You will need to track which IP-address the Raspberry Pi has. It is a dynamic IP
 
 #### MQTT broker
 
-To run the MQTT broker, you need to get access to the Raspberry Pi. Contact us for more info about passwords etc.
-You need the following command to start the MQTT broker (/projects/project-repository-team-turret/...):
+The MQTT broker should run on startup on the Raspberry Pi. If you want build your own broker, here are the steps we took to create ours:
 
-```bash
+1. Install Mosquitto
 
-```
+    ```bash
+    sudo apt-get install mosquitto mosquitto-clients
+    ```
+
+2. Setup listeners for MQTT and websocket
+
+    Make a config file `/etc/mosquitto/conf.d/myconfig.conf` and write the following
+
+    ```txt
+    persistence false
+
+    # mqtt
+    listener 1883
+    protocol mqtt
+
+    # websockets
+    listener 9001
+    protocol websockets
+    ```
+
+3. Create a user
+
+    By doing this, the broker can regulate who can read and write messages.
+    Run the following command:
+
+    ```bash
+    sudo mosquitto_passwd -c /etc/mosquitto/passwd <your username>
+    ```
+
+    This will prompt you to create a password for that specific user.
+
+4. Create an access control list (ACL)
+
+    This way, only clients who have the correct password can publish to a topic.
+    Create the following file `/etc/mosquitto/acl` and write the following:
+
+    ```txt
+    # Allow anonymous access to the sys
+    topic read $SYS/#
+
+    # Allow anonymous to read tommys_blaster
+    topic read tommys_blaster/#
+
+    # Allow specific user to publish
+    user <username>
+    topic tommys_blaster/#
+    ```
+
+5. Add previous created ACL to the broker config
+
+    Open the config file again `/etc/mosquitto/conf.d/myconfig.conf` and enter the following:
+
+    ```text
+    allow_anonymous true
+    password_file /etc/mosquitto/passwd
+
+    acl_file /etc/mosquitto/acl
+    ```
+
+6. Restart Mosquitto
+
+    ```bash
+    sudo service mosquitto restart
+    ```
+
+7. Run Mosquitto
+
+    ```bash
+    mosquitto -c /etc/mosquitto/mosquitto.conf
+    ```
+
+8. Make client subscribe to a topic
+
+    ```bash
+    mosquitto_sub -h localhost -t tommys_blaster/#
+    ```
+
+9. Publish with valid authentication
+
+    ```bash
+    mosquitto_pub -h localhost -t "tommys_blaster/test" -m "Client's first publish" -u "<username>" -P "<password>"
+    ```
 
 #### Camera stream
 
