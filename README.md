@@ -33,6 +33,8 @@ The camera also runs on the Raspberry Pi and will run with the following command
 sudo python3 rpi_camera_surveillance_system.py
 ```
 
+We get this project from the following [website](https://picamera.readthedocs.io/en/latest/recipes2.html#web-streaming)
+
 Contact us for more info about the password.
 
 #### Node-RED
