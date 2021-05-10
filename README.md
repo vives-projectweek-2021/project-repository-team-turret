@@ -9,7 +9,7 @@
 - Tristan De Lil
 - Jay D'Hulster
 
-## Instalation process
+## Installation process
 
 First clone this project with the following command:
 
@@ -21,11 +21,11 @@ This project contains some actions to run before you can operate the robot.
 
 ### Raspberry Pi
 
-You will need to track wich IP-address the Raspberry Pi has. It is an dynamic IP-address so it will differs per user. You can connect to this Raspberry Pi with ssh wich is enabled on the Pi. Next you will need to run some programs on the Raspberry Pi.
+You will need to track which IP-address the Raspberry Pi has. It is a dynamic IP-address so it will be different for each user. You can connect to this Raspberry Pi with SSH wich is enabled on the Pi. Next you will need to run some programs on the Raspberry Pi.
 
 #### MQTT broker
 
-To run the MQTT broker, you need to make access to the Raspberry Pi. Contact us for more info about passwords etc.
+To run the MQTT broker, you need to get access to the Raspberry Pi. Contact us for more info about passwords etc.
 You need the following command to start the MQTT broker (/projects/project-repository-team-turret/...):
 
 ```bash
@@ -34,7 +34,7 @@ You need the following command to start the MQTT broker (/projects/project-repos
 
 #### Camera stream
 
-The camera runs also on the Raspberry Pi and will run with the following command (/projects):
+The camera also runs on the Raspberry Pi and will run with the following command (/projects):
 
 ```bash
 sudo python3 rpi_camera_surveillance_system.py
@@ -44,7 +44,7 @@ Contact us for more info about the password.
 
 #### Node-RED
 
-Node-RED is an graphical simulation program to connect the MQTT requests with the PLC. You will need to run this with the following command (/projects/project-repository-team-turret):
+Node-RED is a graphical simulation program to connect the MQTT requests with the PLC. You will need to run this with the following command (/projects/project-repository-team-turret):
 
 ```bash
 
@@ -52,7 +52,7 @@ Node-RED is an graphical simulation program to connect the MQTT requests with th
 
 #### Client MQTT
 
-The backend for the client runs also on the Raspberry Pi and will run with the following commands (/projects/project-repository-team-turret/backend):
+The backend for the client also runs on the Raspberry Pi and will run with the following commands (/projects/project-repository-team-turret/backend):
 
 ```bash
 npm install
