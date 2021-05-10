@@ -100,3 +100,7 @@ In this option, the robot will shoot in the hardest speed in the fasted interval
 - [Sille Van Landschoot](https://github.com/sillevl)
 - [Franky Loret](https://github.com/frankyloret)
 - [Jonas Lannoo](https://github.com/JonasLannoo)
+
+## Movie
+
+To presentate Team Turret, we have made a short introduction movie <!--[on Youtube](https...) -->
