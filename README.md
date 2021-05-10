@@ -119,13 +119,25 @@ Contact us for more info about the password.
 
 #### Node-RED
 
-Node-RED is a graphical simulation program to connect the MQTT requests with the PLC. You will need to run this with the following command (/projects/project-repository-team-turret):
+Node-RED is a graphical simulation program to connect the MQTT requests with the PLC. Install Node-RED:
 
 ```bash
-
+npm install -g --unsafe-perm node-red
 ```
 
-#### Client MQTT
+To interact with Siemens S7 PLC install:
+
+```bash
+node-red-contrib-s7
+```
+
+Run Node-RED
+
+```bash
+node-red
+```
+
+#### Backend
 
 The backend for the client also runs on the Raspberry Pi and will run with the following commands (/projects/project-repository-team-turret/backend):
 
