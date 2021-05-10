@@ -95,6 +95,13 @@ mediumButton.addEventListener("click", () => {
     changeMode(mediumMode)
 })
 
+
 hardButton.addEventListener("click", () => {
     changeMode(hardMode)
 })
+
+setActive("manual")
+
+function updatePowerValue(val) {
+    document.getElementById('powerValue').value=val; 
+}

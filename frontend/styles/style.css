@@ -33,12 +33,12 @@ section .streamContainer{
 }
 
 #stream {
-  background-image: url('http://172.16.102.76:8000/stream.mjpg');
+  background-image: url('http://172.16.102.76:8000/stream.mjpg'); /* => THIS IP ADDRESS NEED TO BE CHANGED WITH THE IP ADDRESS OF THE RASPBERRY PI */
   cursor: crosshair;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  /*width: 100%;     /*100%*/
+  width: 100%;     /*100%*/
   height: 400px;     /*400px*/
 }
 
@@ -51,6 +51,16 @@ section .wrapper .sliderContainer{
     margin-left: auto;
 }
 
+.sliderContainer input[type="text"]{
+    width: 30px;
+    background-color: #d3d3d3;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 3px;
+    margin-left: 2px;
+    text-align: right;
+}
+
 .slider {
     width: 300px;
     height: 15px;
@@ -59,6 +69,7 @@ section .wrapper .sliderContainer{
     margin-top: 150px;
     outline: none;
     background: #d3d3d3;
+    border-radius: 3px;
     transform: rotate(-90deg);
     -webkit-appearance: none;
 }
@@ -129,6 +140,7 @@ section .controls button:hover{
 }
 
 section .mode p{
+    margin-top: 0px;
     margin-bottom: 5px;
     font-size: 24px;
 }
