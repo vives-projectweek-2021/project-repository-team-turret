@@ -4,10 +4,10 @@
 
 ## Team Members
 
-- Wout Peirens
-- Thomas Luca
-- Tristan De Lil
-- Jay D'Hulster
+- [Wout Peirens](https://github.com/wout297)
+- [Thomas Luca](https://github.com/ThomasLuca)
+- [Tristan De Lil](https://github.com/TristanDeLil)
+- [Jay D'Hulster](https://github.com/JayDHulster)
 
 ## Installation process
 
@@ -73,22 +73,22 @@ php -S localhost:8080
 
 Our robot operates in two modi, manual and automatic. We control these modi from our webpage. For this, our PLC HMI screen needs to place in the modus Camera and needs to click on start.
 
-### Manual
+### Manual mode
 
 In the modus manual can you control the robot in two ways. The first one is by clicking on the camera view. The second way is by clicking on the left and right button. This will change the angle of the robot with one degree. You can also control the speed of the motors. You can change this between 0 and 2000 rpm (revolutions per minute) in steps of 200. With the big orange button you can fire a ball.
 
-### Automatic
+### Automatic mode
 
-When you choose the option automatic, you can make a further choice in easy, middle or hard.
+When you choose the option automatic, you can make a further choice in easy, medium or hard.
 
-### Easy
+### Easy mode
 
-In this option, the robot will TODO
+In this option, the robot will shoot on the lowest speed in the lowest interval of shooting.
 
-### Middle
+### Medium mode
 
-In this option, the robot will TODO
+In this option, the robot will shoot in the middle speed in the middelst interval of shooting.
 
-### Hard
+### Hard mode
 
-In this option, the robot will TODO
+In this option, the robot will shoot in the hardest speed in the fasted interval of shooting.
