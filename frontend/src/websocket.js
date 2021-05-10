@@ -1,4 +1,6 @@
-const ws = new WebSocket("ws://172.16.102.12:3000")
+const IpAddress = "172.16.102.16" // => NEEDS TO BE CHANGED WHEN USING OTHER IP-ADDRESS
+const ws = new WebSocket("ws://" + IpAddress + ":3000")
+// console.log(ws)
 
 ws.onopen = () => {
     console.log("Connected via websocket")
